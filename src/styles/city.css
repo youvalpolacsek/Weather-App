@@ -1,0 +1,77 @@
+#cityContainer{
+    background-color:#00A9A5;
+    border: 1px;
+    border-color: black;
+    border-top-style: groove;
+    border-bottom-style: groove;
+    border-left-style: none;
+    border-right-style: none;
+    display: grid;
+    margin-bottom: 5px;
+    grid-template-rows: 1fr 2fr 1fr ;
+    grid-template-columns: 1fr ;
+    grid-template-areas:
+    "N"
+    "TC"
+    "B"
+}
+
+#cityName{
+    justify-self: center;
+    font-size: 1.5em;
+    grid-area: "N"
+}
+
+#time{
+    grid-area: "T"
+}
+
+#tempContainer{
+    margin-top: 10px;
+    justify-items: center;
+    grid-area: "TC";
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "C"
+    "Tm"
+    "CP"
+}
+
+
+#temperature{
+    grid-area: "Tm"
+}
+
+#condition{
+    grid-area: "C"
+
+}
+
+#conditionPic{
+    grid-area: "CP";
+    margin-top:-20px;
+}
+
+#buttonContainer{
+    grid-area: "B";
+    display: grid;
+    justify-items: center;
+    grid-template-columns: 1fr 1fr 1fr ;
+    grid-template-areas:
+    "PB"
+    "MB"
+    "RB"
+}
+
+#plusButton{
+    grid-area: "PB"
+}
+
+#minusButton{
+    grid-area: "MB"
+}
+
+#refreshButton{
+    grid-area: "RB"
+}
