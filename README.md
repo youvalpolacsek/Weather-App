@@ -1,11 +1,11 @@
 # Built With:
-React
-Node.JS
-Express
-mongoDB
-access an external API
+- React
+- Node.JS
+- Express
+- MongoDB
+- Access an external API
 
 # features:
-Weather search by city.
-Add city to favorites.
-Delete from favorites.
+- Weather search by city.
+- Add city to favorites.
+- Delete from favorites.
