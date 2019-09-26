@@ -3,7 +3,7 @@ const path = require('path')
 const bodyParser = require('body-parser')
 const mongoose = require('mongoose')
 
-mongoose.connect(process.env.MONGODB_URI||'mongodb://127.0.0.1/myWeather', {useUnifiedTopology: true, useNewUrlParser: true })
+mongoose.connect('mongodb://127.0.0.1/myWeather', {useUnifiedTopology: true, useNewUrlParser: true })
 
 const app = express()
 const api = require('./server/routes/api')
@@ -22,6 +22,6 @@ app.use(function (req, res, next) {
 app.use('/', api)
 
 const port = 5000
-let socket = app.listen(process.env.PORT || PORT, () => console.log( `Running server on port ${ port }` ) )
+let socket = app.listen(port, () => console.log( `Running server on port ${ port }` ) )
 
 module.exports = { app, socket }
